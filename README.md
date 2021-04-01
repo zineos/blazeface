@@ -62,6 +62,17 @@ Blazeface |**0.175**| 228.134
 
 ps: 320*240作为输入
 
+## inference speed benmark
+
+方法|inference(ms)|nms(ms) 
+------|--------|----------
+version-slim(our)|3.3    |20
+version-RFB(our)|4.3    |21
+Retinaface-Mobilenet-0.25(our)  |4.6|20
+Blazeface |4.3|22
+
+ps: 长边为 640 作为输入, 图像等比例缩放, 使用gpu为3090, 使用test.py测试
+
 ### Model size comparison
 - Comparison of several open source lightweight face detection models:
 
